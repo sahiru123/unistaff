@@ -1,0 +1,91 @@
+/* university-academic-staff.css */
+
+.university-academic-staff {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+}
+
+.staff-profile {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.staff-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.staff-image {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.staff-info {
+    flex-grow: 1;
+}
+
+.staff-name {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.staff-position {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #107cc4;
+    font-weight: 600;
+}
+
+.staff-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.staff-button {
+    background-color: #0c7bc3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.staff-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .staff-image {
+        width: 120px;
+        height: auto;
+        margin-right: 15px;
+        margin-bottom: 15px; /* Add margin at the bottom */
+    }
+
+    .staff-profile {
+        flex-direction: column;
+    }
+
+    .staff-image {
+        align-self: flex-start; /* Align the image to the left */
+        margin-right: 0; /* Remove right margin */
+    }
+}
